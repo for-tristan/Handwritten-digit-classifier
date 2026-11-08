@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_openml
+from sklearn.metrics import accuracy_score
 
 mnist = fetch_openml("mnist_784", version=1, as_frame=False)
 X, y = mnist.data, mnist.target.astype(int)
@@ -17,3 +18,8 @@ def one_hot(labels, num_classes=10):
 
 Y_train = one_hot(y_train)
 Y_test = one_hot(y_test)
+
+plt.imshow(X_train[0].reshape(28, 28), cmap="gray")
+plt.title(f"Label: {y_train[0]}")
+plt.show()
+
