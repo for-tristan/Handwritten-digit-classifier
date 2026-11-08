@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter (if you use notebooks)
+.ipynb_checkpoints/
+
+# Downloaded datasets and saved model weights
+data/
+*.npz
+*.npy
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
